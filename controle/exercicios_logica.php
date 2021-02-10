@@ -24,16 +24,22 @@ echo '<hr>';
 echo '<p>2) Entrar com um número e informar se ele é
 divisível por 10, por 5, por 2 ou se não é
 divisível por nenhum destes</p>';
-//só está mostrando o primeiro divisor. Arrumar!!
 
 $num = 100;
+
 if ($num % 10 == 0) {
     echo "O núméro $num é divisível por 10";
-}elseif ($num % 5 == 0) {
+}
+
+if ($num % 5 == 0) {
     echo "O núméro $num é divisível por 5";
-}elseif ($num % 2 == 0) {
+}
+
+if ($num % 2 == 0) {
     echo "O núméro $num é divisível por 2";
-} else{
+}
+
+if ($num % 10 != 0 and $num % 5 != 0 and $num % 2 != 0) {
     echo "O núméro $num não é divisível por 10, 5 e 2";
 }
 
@@ -71,15 +77,67 @@ triângulo, e imprimir a classificação de
 acordo com tamanho dos lados</p>';
 
 $ladoA = 6;
-$ladoB = 5;
+$ladoB = 6;
 $ladoC = 6;
-
+echo "Lados do triângulo: $ladoA, $ladoB e $ladoC<br>";
+if (($ladoA+$ladoB>$ladoC)&&($ladoA+$ladoC>$ladoB) && ($ladoB+$ladoC>$ladoA)) {
+}
 if ($ladoA === $ladoB && $ladoC) {
-    echo "Triângulo Equilátero";   #todos os lados do triângulo possuem a mesma medida.
-} if () {
-
+    echo "Este é um Triângulo Equilátero.";   #todos os lados do triângulo possuem a mesma medida.
+}
+else if ($ladoA == $ladoB || $ladoA == $ladoC || $ladoB == $ladoC) {
+    echo "Este é um Triangulo Isósceles.";    #possui dois lados iguais e um diferente.
+}
+else {
+    echo "Este é um Triangulo Escaleno.";     #possui todos os seus lados diferentes
 }
 
+//echo '<hr>';
+//echo '<p>6) Ler um número inteiro entre 1 e 12 e escrever
+//o mês correspondente. Caso o número seja
+//fora desse intervalo, informar que não existe
+//mês com este número</p>';
+//
+////DESCOBRIR COMO IMPRIMIR OS VALORES E COMO INSERIR OS NÚMEROS QUE
+////NÃO ESTÃO NO INTERVALO!!
+//
+//$arrayA = arrayA ('1','2','3','4',
+//                  '5','6','7','8',
+//                  '9','10','11','12');
+//$arrayB =  arrayB ('janeiro', 'fevereiro',
+//                   'marco', 'abril', 'maio',
+//                   'junho', 'julho', 'agosto',
+//                   'setembro');
+//$c = array_combine($arrayA, $arrayB);
+//print_r($c);
+
+echo '<hr>';
+echo '<p>7) A biblioteca de uma universidade deseja fazer
+um algoritmo que leia o nome do livro que
+será emprestado, o tipo de usuário (professor
+ou aluno) e possa imprimir um recibo
+conforme mostrado a seguir. Considerar que
+o professor tem 10 dias para devolver o livro
+o aluno somente 3 dias</p>';
+
+//NÃO ESTÁ IMPRIMINDO RECIBO E NOME DO LIVRO!!
+$nomeLivro = '';
+$usuario = 'Aluno';
+$recibo = '';
+
+switch (strtolower($usuario)) {
+    case 'Aluno':
+        $usuario = 'Aluno';
+        $recibo = '3 dias';
+        $nomeLivro = 'Outsider';
+        break;
+    case 'Professor':
+        $usuario = 'Professor';
+        $recibo = '10 dias';
+        $nomeLivro = 'Codigo Da Vinci';
+        break;
+}
+echo "Usuário: $usuario <br> Recibo: $recibo <br> Nome do Livro: $nomeLivro";
 
 
 
