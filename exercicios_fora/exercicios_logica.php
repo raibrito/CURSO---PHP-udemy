@@ -120,24 +120,34 @@ conforme mostrado a seguir. Considerar que
 o professor tem 10 dias para devolver o livro
 o aluno somente 3 dias</p>';
 
-//NÃO ESTÁ IMPRIMINDO RECIBO E NOME DO LIVRO!!
-$nomeLivro = '';
+$nomeLivro = '??';
 $usuario = 'Aluno';
 $recibo = '';
 
-switch (strtolower($usuario)) {
-    case 'Aluno':
-        $usuario = 'Aluno';
-        $recibo = '3 dias';
-        $nomeLivro = 'Outsider';
-        break;
-    case 'Professor':
-        $usuario = 'Professor';
-        $recibo = '10 dias';
-        $nomeLivro = 'Codigo Da Vinci';
-        break;
+if ($usuario === 'Aluno') {
+    $recibo = '3 dias';
+    $nomeLivro = 'Outsider';
+} else {
+    $usuario === 'Professor';
+    $recibo = '10 dias';
+    $nomeLivro = 'Codigo Da Vinci';
 }
-echo "Usuário: $usuario <br> Recibo: $recibo <br> Nome do Livro: $nomeLivro";
+echo "Usuário: $usuario <br> Recibo: $recibo <br> Nome do Livro: $nomeLivro<br><br>";
+//usando switch:
+$usuario = 'Professor';
+switch ($usuario) {
+    case 'Aluno':
+         $recibo = '3 dias';
+         $nomeLivro = 'Outsider';
+         break;
+    default:
+         $recibo = '10 dias';
+         $nomeLivro = 'Codigo Da Vinci';
+         break;
+}
+echo "Usuário: $usuario <br> Recibo: $recibo <br> Nome do Livro: $nomeLivro<br>";
 
+echo '<hr>';
+echo '<p>8) </p>';
 
 

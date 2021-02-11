@@ -181,27 +181,81 @@
                                 Desafio Switch
                             </a>
                         </li>
-                        <li>
-                            <a href="exercicio.php?dir=controle&file=exercicios_logica">
-                                Exercícios Lógica
-                            </a>
-                        </li>
                     </ul>
                 </div>
                 <div class="modulo laranja ">
-                    <h3>Módulo 05</h3>
+                    <h3>Array</h3>
                     <ul>
-                        <li><a href="#">Exercício A</a> </li>
-                        <li><a href="#">Exercício B</a> </li>
-                        <li><a href="#">Exercício C</a> </li>
+                        <li>
+                            <a href="exercicio.php?dir=array&file=basico">
+                                Array
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=array&file=mapa">
+                                Mapa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=array&file=desafio_index">
+                                Desafio Index
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=array&file=desafio_meses">
+                                Desafio Meses
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=array&file=operacoes">
+                                Operações
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=array&file=desafio_sorteio">
+                                Desafio Sorteio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=array&file=multi">
+                                Multidimensionais
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=array&file=constante">
+                                Arrays Constantes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=array&file=get">
+                                $_GET
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=array&file=post">
+                                $_POST
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=array&file=comparacao">
+                                Comparação Array
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="modulo verde-escuro ">
                     <h3>Módulo 06</h3>
                     <ul>
-                        <li><a href="#">Exercício A</a> </li>
-                        <li><a href="#">Exercício B</a> </li>
-                        <li><a href="#">Exercício C</a> </li>
+                        <li>
+                            <a href="exercicio.php?dir=repeticoes&file=for">
+                                Laço For
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=repeticoes&file=desafio_for">
+                                Desafio For
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="modulo vermelho-escuro">
@@ -221,11 +275,18 @@
                     </ul>
                 </div>
                 <div class="modulo roxo-escuro">
-                    <h3>Módulo 09</h3>
+                    <h3>Exercícios Fora do Curso</h3>
                     <ul>
-                        <li><a href="#">Exercício A</a> </li>
-                        <li><a href="#">Exercício B</a> </li>
-                        <li><a href="#">Exercício C</a> </li>
+                        <li>
+                            <a href="exercicio.php?dir=exercicios_fora&file=exercicios_logica">
+                                ExercÍcios Lógica
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=exercicios_fora&file=exercicios_if_else">
+                                Testes Condicionais
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
