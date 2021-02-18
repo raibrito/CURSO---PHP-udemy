@@ -20,7 +20,31 @@ if($vogal =="a"){
 }
 
 echo '<hr>';
-echo '<p>2. Sistema que pede duas notas de um aluno. Em seguida ele deve calcular a média do aluno e dar o seguinte resultado:<br>
+echo '<p>2. Crie um algoritmo que receba um número digitado pelo usuário e verifique se esse valor é positivo,
+ negativo ou igual a zero. A saída deve ser: "Valor Positivo", "Valor Negativo" ou "Igual a Zero".</p>';
+
+$numUsuario = 12;
+
+if ($numUsuario >0 ){
+    echo "$numUsuario é um número positivo.";
+}elseif ($numUsuario < 0) {
+    echo "$numUsuario é um número negativo.";
+} else {
+    echo  "$numUsuario é igual a zero";
+}
+
+echo '<hr>';
+echo '<p>3. Exibir números pares de 0 até 15</p>';
+
+for ($i = 0; $i <= 15; $i++) {
+    if(($i%2) == 0) {
+        echo "$i <br>";
+    }
+}
+
+
+echo '<hr>';
+echo '<p>4. Sistema que pede duas notas de um aluno. Em seguida ele deve calcular a média do aluno e dar o seguinte resultado:<br>
 
     A mensagem "Aprovado", se a média alcançada for maior ou igual a sete;
     A mensagem "Reprovado", se a média for menor do que sete;
@@ -28,7 +52,7 @@ echo '<p>2. Sistema que pede duas notas de um aluno. Em seguida ele deve calcula
 ?>
 <html>
 <head>
-    <title>Apostila PHP Progressivo</title>
+    <title></title>
 </head>
 <body>
 <form action="" method="get">
@@ -43,7 +67,7 @@ $media = ($nota1 + $nota2)/2;
 echo "Média: $media <br/>";
 if ($media <7) {
     echo "Reprovado";
-} elseif ($media ==10){
+} elseif ($media == 10){
     echo "Aprovado com Distinção";
 } else {
     "Aprovado";

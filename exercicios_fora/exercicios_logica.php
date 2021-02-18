@@ -98,7 +98,7 @@ else {
 //fora desse intervalo, informar que não existe
 //mês com este número</p>';
 //
-////DESCOBRIR COMO IMPRIMIR OS VALORES E COMO INSERIR OS NÚMEROS QUE
+////DESc IMPRIMIR OS VALORES E COMO INSERIR OS NÚMEROS QUE
 ////NÃO ESTÃO NO INTERVALO!!
 //
 //$arrayA = arrayA ('1','2','3','4',
@@ -148,6 +148,46 @@ switch ($usuario) {
 echo "Usuário: $usuario <br> Recibo: $recibo <br> Nome do Livro: $nomeLivro<br>";
 
 echo '<hr>';
-echo '<p>8) </p>';
+
+echo '<p>8) 
+Criar um algoritmos que leia um número e
+imprima todos os número de 1 até ele e o seu
+produto.</p>';
+
+$numero = 12;
+$soma = 0;
+for ($i = 0; $i < $numero; $i++) {
+    $soma = $soma + $i;
+    echo "$i, ";
+}
+echo '<br>';
+echo "O produto de $numero é: $soma";
+
+echo '<hr>';
+echo '<p>9) Entrar com o número de vezes que se deseja
+imprimir a palavra SOL e imprimir.</p>';
+
+$sol = 'SOL';
+$n = 5;
+$soma = 0;
+
+for ($i = 0; $i < $n; $i++) {
+    $soma = $soma + $i;
+    echo "$sol, ";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

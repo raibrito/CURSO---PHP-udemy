@@ -15,3 +15,8 @@ for ($cont = 1; $cont <=5; $cont++) {
     $p .= '#';
     echo "$p<br>";
 }
+echo '<hr>';
+
+for ($p2 = '#'; $p2 !== '######'; $p2 .= '#' ) {
+    echo "$p2 <br>";
+}
